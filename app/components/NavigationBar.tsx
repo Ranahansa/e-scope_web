@@ -5,9 +5,9 @@ import { GoChevronDown } from "react-icons/go";
 const NavigationBar = () => {
     return (
         <div className="bg-[#00365C] py-3">
-            <div className="container mx-auto flex justify-between items-center">
+            <div className="container mx-auto px-5 flex justify-between items-center">
                 <h1 className="text-2xl font-bold text-white">E-Scope</h1>
-                <ul className="flex space-x-7 font-bold">
+                <ul className="flex space-x-10 font-bold">
                     <li>
                         <Link className="text-white hover:text-gray-300">Home</Link>
                     </li>
