@@ -218,12 +218,12 @@ const HeroSection: React.FC = () => {
     }, []);
 
     return (
-        <div ref={headerRef} className="large-header relative flex flex-col items-center justify-center pb-12 min-h-screen text-white text-center px-4 sm:px-8 bg-[#000040] overflow-hidden">
+        <div ref={headerRef} className="large-header relative flex flex-col items-center justify-center pb-[70px] min-h-screen text-white text-center px-4 sm:px-8 bg-[#000040] overflow-hidden">
             <canvas ref={canvasRef} id="demo-canvas"></canvas>
-            <div className="relative z-10">
-                <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-4">
+            <div className="relative z-10 mb-2">
+                <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-6 ">
                     Your Product
-                    <span className='bg-gradient-to-r from-[#F915D7] to-[#160062] bg-clip-text text-transparent'>
+                    <span className='bg-gradient-to-r from-[#F915D7] to-[#160062] bg-clip-text text-transparent '>
                         Engineering
                     </span>
                 </h1>
