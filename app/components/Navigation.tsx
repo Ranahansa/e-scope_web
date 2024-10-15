@@ -36,7 +36,8 @@ export default function Navigation() {
     };
 
     return (
-        <Navbar maxWidth="full" className="bg-[#000040] py-3 px-4 md:px-8 lg:px-16 ">
+        <div className="w-full sticky top-0 right-0 left-0">
+        <Navbar  maxWidth="full" className="bg-[#000040] py-3 px-24">
             <NavbarBrand>
                 <Link href="/" className="font-bold text-inherit text-white no-underline">
                     E-Scope
@@ -109,5 +110,6 @@ export default function Navigation() {
                 </NavbarItem>
             </NavbarContent>
         </Navbar>
+        </div>
     );
 }

@@ -218,10 +218,12 @@ const HeroSection: React.FC = () => {
     }, []);
 
     return (
-        <div ref={headerRef} className="large-header relative flex flex-col items-center justify-center pb-[70px] min-h-screen text-white text-center px-4 sm:px-8 bg-[#000040] overflow-hidden">
+        <div>
+            <div ref={headerRef} className="large-header relative flex flex-col items-center justify-center pb-[70px] min-h-screen text-white text-center sm:px-8 bg-[#000040] overflow-hidden">
             <canvas ref={canvasRef} id="demo-canvas"></canvas>
-            <div className="relative z-10 mb-2">
-                <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-6 ">
+            <div className="px-28">
+                <div className="relative z-10 mb-2">
+                <h1 className="text-[5rem] font-bold mb-3 ">
                     Your Product
                     <span className='bg-gradient-to-r from-[#F915D7] to-[#160062] bg-clip-text text-transparent '>
                         Engineering
@@ -229,12 +231,15 @@ const HeroSection: React.FC = () => {
                 </h1>
                 <p className="text-3xl sm:text-5xl lg:text-7xl font-bold mb-2">+ Growth Marketing</p>
                 <p className="text-3xl sm:text-5xl lg:text-7xl font-bold mb-2">For Startups</p>
-                <p className="text-base sm:text-lg lg:text-xl mb-6">Empowering startups with expert product engineering and growth strategies to launch, scale, and dominate the market.</p>
-                <Button className="hero-button rounded-full shadow-2xl bg-[#F915D7]" color="primary" size="lg">
+                <p className="text-base sm:text-lg lg:text-2xl mb-6 mt-4">Empowering startups with expert product engineering and growth strategies to launch, scale, and dominate the market.</p>
+                <Button className="hero-button rounded-full shadow-2xl bg-[#F915D7] mt-7" color="primary" size="lg">
                     LET'S GET STARTED
                 </Button>
             </div>
+            </div>
         </div>
+        </div>
+        
     );
 };
 
