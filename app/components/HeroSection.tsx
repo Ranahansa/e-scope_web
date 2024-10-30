@@ -217,29 +217,29 @@ const HeroSection: React.FC = () => {
     }, []);
 
     return (
-        <div ref={headerRef} className="relative w-full h-[80vh] bg-[#000040]">
+        <div ref={headerRef} className="relative w-full max-h-[800px] bg-[#000040] overflow-hidden">
     {/* Canvas container - hidden on medium and smaller screens */}
     <div className="absolute inset-0 hidden lg:block">
         <canvas
             ref={canvasRef}
             id="demo-canvas"
-            className="w-full h-[80vh]"
+            className="w-full h-[70vh] object-cover"
         />
     </div>
 
     {/* Content container with responsive padding */}
     <div className="relative w-full mx-auto px-6 sm:px-10 md:px-16 lg:px-28 flex flex-col items-center justify-center h-full text-center">
-        {/* Add your content here */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[5.3rem] text-white font-bold ">
+        {/* Headings */}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[5.3rem] text-white font-bold">
             Your Product Engineering
         </h1>
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[5rem] text-white font-bold mt-5">
             + Growth Marketing
         </h1>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[5rem] bg-gradient-to-r from-[rgba(228,107,232,1)] to-[rgba(87,27,226,1)] bg-clip-text text-transparent font-bold mt-5">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[5rem] bg-gradient-to-r from-pink-500 to-blue-800 bg-clip-text text-transparent font-bold mt-5">
             Powerhouse
         </h1>
-        <button className="mt-10 px-6 py-2 rounded bg-gradient-to-r from-[rgba(228,107,232,1)] to-[rgba(87,27,226,1)] text-white font-semibold text-sm sm:text-base md:text-lg lg:text-xl hover:bg-blue-600 transition">
+        <button className="mt-10 px-6 py-2 rounded bg-gradient-to-r from-pink-500 to-blue-800 text-white font-semibold text-sm sm:text-base md:text-lg lg:text-xl hover:bg-gradient-to-r hover:from-blue-800 hover:to-pink-500 transition duration-300">
             Get Started
         </button>
     </div>
