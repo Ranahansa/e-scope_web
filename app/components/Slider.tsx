@@ -13,6 +13,8 @@ const Slider = () => {
                     </p>
                 </div>
             </div>
+            
+
         </div>
     );
 };
