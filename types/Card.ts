@@ -1,4 +1,4 @@
-interface CardProps {
+export interface CardProps {
     title: string;
     heading: string;
     description: string;
@@ -11,16 +11,3 @@ interface CardProps {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-export default CardProps;
