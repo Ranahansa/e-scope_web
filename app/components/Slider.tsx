@@ -1,8 +1,10 @@
+import Image from 'next/image';
 import React from 'react';
+import slider1 from '../assets/slider1.jpg';
 
 const Slider = () => {
     return (
-        <div className='px-28 w-full h-60'>
+        <div className='px-28 w-full h-screen'>
             <div className='flex justify-center items-center mx-auto'>
                 <div>
                     <h1 className='text-4xl md:text-5xl text-center font-bold'>
@@ -13,8 +15,19 @@ const Slider = () => {
                     </p>
                 </div>
             </div>
-            
-
+            <div className='w-full h-[32rem] bg-slate-300 rounded-xl my-5'>
+                <div className='w-full h-full flex justify-center items-center'>
+                    <div className='flex justify-center items-center'>
+                        {/* <Image
+                            alt="NextUI Fruit Image with Zoom"
+                            src={slider1}
+                            width={1000}
+                            height={300}
+                            unoptimized
+                        /> */}
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
