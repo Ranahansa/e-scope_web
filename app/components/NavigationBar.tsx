@@ -131,7 +131,7 @@ export default function Navigation() {
                 {/* Contact Us Button */}
                 <NavbarContent justify="end">
                     <NavbarItem>
-                        <Button as={Link} href="#" className="bg-[#FF3841] text-white rounded-md px-4 py-2 md:px-10">
+                        <Button as={Link} href="/contact" className="bg-[#FF3841] text-white rounded-md px-4 py-2 md:px-10">
                             Contact Us
                         </Button>
                     </NavbarItem>

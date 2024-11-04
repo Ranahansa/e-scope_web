@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import card1 from '../assets/card1.gif';
 import card2 from '../assets/card2.gif';
-import { CardProps } from '@/types/Card';
+import { CardProps } from '@/types';
 
 
 

@@ -4,11 +4,11 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/f
 
 const Footer = () => {
     return (
-        <footer className="bg-[#000040] text-white px-28 py-16">
+        <footer className="bg-[#000040] text-white px-6 py-10 md:px-28 md:py-16">
             {/* Main Footer Content */}
-            <div className="grid grid-cols-6 gap-8 mb-12">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 mb-12">
                 {/* Capabilities Section */}
-                <div className="col-span-1">
+                <div>
                     <h3 className="font-semibold mb-4 text-lg">CAPABILITIES</h3>
                     <ul className="space-y-3">
                         <li><Link href="/product" className="hover:text-gray-300">Product</Link></li>
@@ -17,7 +17,7 @@ const Footer = () => {
                 </div>
 
                 {/* Company Section */}
-                <div className="col-span-1">
+                <div>
                     <h3 className="font-semibold mb-4 text-lg">COMPANY</h3>
                     <ul className="space-y-3">
                         <li><Link href="/clients" className="hover:text-gray-300">Clients</Link></li>
@@ -26,7 +26,7 @@ const Footer = () => {
                 </div>
 
                 {/* Careers Section */}
-                <div className="col-span-1">
+                <div>
                     <h3 className="font-semibold mb-4 text-lg">CAREERS</h3>
                     <ul className="space-y-3">
                         <li><Link href="/careers" className="hover:text-gray-300">Careers</Link></li>
@@ -35,7 +35,7 @@ const Footer = () => {
                 </div>
 
                 {/* Resources Section */}
-                <div className="col-span-1">
+                <div>
                     <h3 className="font-semibold mb-4 text-lg">RESOURCES</h3>
                     <ul className="space-y-3">
                         <li><Link href="/blog" className="hover:text-gray-300">Blog</Link></li>
@@ -45,7 +45,7 @@ const Footer = () => {
                 </div>
 
                 {/* Contact Section */}
-                <div className="col-span-1">
+                <div>
                     <h3 className="font-semibold mb-4 text-lg">CONTACT</h3>
                     <ul className="space-y-3">
                         <li><Link href="/contact" className="hover:text-gray-300">Contact us</Link></li>
@@ -53,7 +53,7 @@ const Footer = () => {
                 </div>
 
                 {/* Legal Section */}
-                <div className="col-span-1">
+                <div>
                     <h3 className="font-semibold mb-4 text-lg">LEGAL</h3>
                     <ul className="space-y-3">
                         <li><Link href="/privacy" className="hover:text-gray-300">Privacy Policy</Link></li>
@@ -62,9 +62,9 @@ const Footer = () => {
             </div>
 
             {/* Bottom Bar */}
-            <div className="flex justify-between items-center pt-8 border-t border-gray-700">
+            <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-700">
                 {/* Copyright */}
-                <div className="text-gray-400">
+                <div className="text-gray-400 mb-4 md:mb-0">
                     © Copyright 2024 E-Scope International.
                 </div>
 
