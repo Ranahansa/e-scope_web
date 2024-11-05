@@ -89,7 +89,7 @@ export default function Navigation() {
                                         radius="sm"
                                         // variant="light"
                                     >
-                                        Features
+                                        Resources
                                     </Button>
                                 </div>
                             </DropdownTrigger>
@@ -101,13 +101,13 @@ export default function Navigation() {
                             onMouseLeave={handleMouseLeave}
                         >
                             <DropdownItem key="autoscaling" startContent={icons.scale}>
-                                Autoscaling
+                                Blog
                             </DropdownItem>
                             <DropdownItem key="usage_metrics" startContent={icons.activity}>
-                                Usage Metrics
+                                Academy
                             </DropdownItem>
                             <DropdownItem key="production_ready" startContent={icons.flash}>
-                                Production Ready
+                                Benchmark Guide
                             </DropdownItem>
                             <DropdownItem key="99_uptime" startContent={icons.server}>
                                 +99% Uptime
@@ -118,7 +118,7 @@ export default function Navigation() {
                         </DropdownMenu>
                     </Dropdown>
                     <NavbarItem>
-                        <Link href="#" className="text-white">Customers</Link>
+                        <Link href="/product" className="text-white">Product</Link>
                     </NavbarItem>
                     <NavbarItem>
                         <Link href="#" className="text-white">Integrations</Link>
