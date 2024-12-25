@@ -1,8 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import tech2 from '../assets/tech2.jpg'
-import tech1 from '../assets/tech1.jpg'
-
 
 const Page = () => {
     return (
@@ -17,27 +14,103 @@ const Page = () => {
                 </p>
             </div>
             <div className="grid grid-cols-2 grid-rows-1 m-2">
-                <div className='border border-slate-500 rounded-xl h-[32rem]'>
-                    <Image src={tech1} height={100} width={100} alt="tech1" layout="fill" objectFit="cover" className="rounded-xl" />
+                <div className='rounded-sm h-[32rem]'>
+                    <div className='flex flex-col justify-center items-center h-full'>
+                        <h1 className='text-5xl font-bold px-5'>Full stack engineering team</h1>
+                        <p className='text-lg text-gray-500 text-start px-5 pt-11'>
+                            Our full stack engineering team combines expertise across front-end, back-end, and everything in between to build seamless, scalable applications. From concept to deployment, we create intuitive, high-performing systems that millions rely on, delivering solutions that support business growth and adapt to evolving needs.
+                        </p>
+                    </div>
                 </div>
-                <div className='border border-slate-500 rounded-xl h-[32rem]'>
+                <div className='rounded-sm h-[32rem]'>
+                    <div className='bg-gradient-to-r from-[#FF3535] to-black h-full rounded-xl'>
 
+                    </div>
                 </div>
             </div>
             <div className="grid grid-cols-2 grid-rows-1 m-2">
-                <div className='border border-slate-500 rounded-xl h-[32rem]'>
+                <div className='rounded-sm h-[32rem]'>
+                    <div className='bg-gradient-to-r from-[#C20027] to-[#0A2368] h-full rounded-xl'>
 
+                    </div>
                 </div>
-                <div className='border border-slate-500 rounded-xl h-[32rem]'>
-
+                <div className='rounded-sm h-[32rem]'>
+                    <div className='flex flex-col justify-center items-center h-full'>
+                        <h1 className='text-5xl items-start font-bold px-5'>Cloud computing</h1>
+                        <p className='text-lg text-gray-500 text-start px-5 pt-11'>
+                            We design, implement, and manage cloud infrastructures that empower organizations to scale rapidly and securely. Our cloud solutions enable billion-dollar enterprises and government agencies to operate with flexibility, optimize resources, and stay resilient, handling demands in even the most data-intensive environments.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div className="grid grid-cols-2 grid-rows-1 m-2">
-                <div className='border border-slate-500 rounded-xl h-[32rem]'>
-
+                <div className='rounded-sm h-[32rem]'>
+                    <div className='flex flex-col justify-center items-center h-full'>
+                        <h1 className='text-5xl items-start font-bold px-5'>Data science, AI/ML</h1>
+                        <p className='text-lg text-gray-500 text-start px-5 pt-11'>
+                            We harness the power of data science, AI, and machine learning to drive predictive analytics, automation, and intelligent decision-making. Our models enable businesses to stay ahead with insights that are both forward-thinking and grounded in real-world applications, unlocking new avenues for growth and innovation.
+                        </p>
+                    </div>
                 </div>
-                <div className='border border-slate-500 rounded-xl h-[32rem]'>
+                <div className='rounded-sm h-[32rem]'>
+                    <div className='bg-[radial-gradient(circle_710px_at_5.2%_7.2%,_#2559DE_0%,_#2559DE_7.5%,_#04041D_44.7%)] h-full rounded-xl'>
 
+                    </div>
+                </div>
+            </div>
+            <div className="grid grid-cols-2 grid-rows-1 m-2">
+                <div className='rounded-sm h-[32rem]'>
+                    <div className='bg-gradient-to-r from-[#003D64] via-[#2F7FA4] to-[#1EC6C6] h-full rounded-xl'>
+
+                    </div>
+                </div>
+                <div className='rounded-sm h-[32rem]'>
+                    <div className='flex flex-col justify-center items-center h-full'>
+                        <h1 className='text-5xl items-start font-bold px-5'>SEO Technologies</h1>
+                        <p className='text-lg text-gray-500 text-start px-5 pt-11'>
+                            We harness the power of data science, AI, and machine learning to drive predictive analytics, automation, and intelligent decision-making. Our models enable businesses to stay ahead with insights that are both forward-thinking and grounded in real-world applications, unlocking new avenues for growth and innovation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            {/* Stats Section */}
+            <div className="py-28 p-1">
+                <div className="text-center space-y-4">
+                    <h2 className="text-5xl font-bold">The Faster, Affordable, Better Solution</h2>
+                    <p className="text-gray-500 max-w-3xl mx-auto">
+                        Discover the advantages of choosing QuickEdit over a traditional editor. Say goodbye to 
+                        delays and elevate your content creation process.
+                    </p>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                    {/* 98% Card */}
+                    <div className="bg-white rounded-lg p-8 shadow-lg text-center">
+                        <div className="text-6xl font-bold mb-4">98%</div>
+                        <div className="flex items-center justify-center space-x-2">
+                            <span className="text-green-500">✓</span>
+                            <p className="text-gray-600">faster than a traditional editor</p>
+                        </div>
+                    </div>
+                    
+                    {/* 85% Card */}
+                    <div className="bg-white rounded-lg p-8 shadow-lg text-center">
+                        <div className="text-6xl font-bold mb-4">85%</div>
+                        <div className="flex items-center justify-center space-x-2">
+                            <span role="img" aria-label="money" className="text-yellow-500">✓</span>
+                            <p className="text-gray-600">more affordable than a traditional editor</p>
+                        </div>
+                    </div>
+                    
+                    {/* 120% Card */}
+                    <div className="bg-white rounded-lg p-8 shadow-lg text-center">
+                        <div className="text-6xl font-bold mb-4">120%</div>
+                        <div className="flex items-center justify-center space-x-2">
+                            <span role="img" aria-label="rocket" className="text-red-500">✓</span>
+                            <p className="text-gray-600">increased efficiency and features</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
