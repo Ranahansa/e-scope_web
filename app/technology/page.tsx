@@ -1,8 +1,12 @@
-import Image from 'next/image'
+
+import Link from 'next/link';
 import React from 'react'
-import { Button } from "@nextui-org/react";
+import { BsArrowUpRightCircleFill } from "react-icons/bs";
+import { MdGroupAdd } from "react-icons/md";
+
 
 const Page = () => {
+    
     return (
         <div className="px-28 w-full pt-12 min-h-screen">
             <div className="items-center flex flex-col justify-center text-4xl sm:text-5xl lg:text-7xl font-bold">
@@ -114,18 +118,52 @@ const Page = () => {
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-5 h-[24rem] mb-9 p-2 gap-6">
+            <div className="grid grid-cols-5 h-[24rem] mb-12 p-2 gap-6">
                 {/* Left Side (60%) */}
-                <div className="col-span-3 bg-gradient-to-r from-[#FF3535] to-black flex items-center justify-center rounded-l-lg">
-                    <div className='flex flex-row justify-start items-start'>
-                        <Button className="text-white" color="primary" variant="ghost">
-                        Light
-                    </Button>
+                <div className="col-span-3 bg-gradient-to-r from-[#FF3535] to-black rounded-l-lg">
+                    <div className='flex flex-row justify-start items-start m-6'>
+                        <button className="bg-transparent hover:bg-black text-white font-semibold hover:text-white py-2 px-3 border border-gray-700 hover:border-transparent rounded-2xl">
+                            Careers
+                        </button>
+                    </div>
+                    <div className='flex flex-row justify-center items-center px-6'>
+                        <h1 className='text-5xl text-white items-center font-bold'>Interested in joining our team of experts?</h1>
+                    </div>
+                    <div className='flex flex-row justify-between items-center px-6 pt-12'>
+                        <div>
+                            <p className='text-gray-400 text-lg font-semibold'>
+                                Explore Opportunities
+                            </p>
+                        </div>
+                        <div>
+                            <button>
+                                <BsArrowUpRightCircleFill className='text-7xl text-gray-300' />
+                            </button>
+                        </div>
                     </div>
                 </div>
                 {/* Right Side (40%) */}
-                <div className="col-span-2 bg-black flex items-center justify-center rounded-r-lg">
-                    <p className="text-white">Right Side</p>
+                <div className="col-span-2 bg-black rounded-r-lg">
+                    <div className='flex flex-row justify-start items-start m-6'>
+                        <button>
+                            <MdGroupAdd className='text-3xl text-gray-300' />
+                        </button>
+                    </div>
+                    <div className='flex flex-row justify-center items-center px-6'>
+                        <h1 className='text-5xl text-white items-center font-bold'>
+                            Ready to meet your technology team ?
+                        </h1>
+                    </div>
+                    <div className='flex flex-row justify-between items-center px-6 pt-12'>
+                        <Link href="/contact">
+                            <div className='text-gray-400 text-xl font-semibold'>
+                                Contact Us
+                            </div>
+                        </Link>
+                        <div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
