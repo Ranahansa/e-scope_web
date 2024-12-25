@@ -37,8 +37,8 @@ const page: React.FC = () => {
   return (
     <div className="px-4 md:px-28 w-full py-10">
       <div className="text-center">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl bg-gradient-to-r from-pink-500 to-blue-800 bg-clip-text text-transparent font-bold">Contact Us</h1>
-        <p className="text-xl text-gray-500 mt-5 p-1">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl bg-gradient-to-r from-pink-500 to-blue-800 bg-clip-text text-transparent font-bold">Contact Us</h1>
+        <p className="text-xl text-gray-500 mt-5 py-1 px-8">
           Interested in working with us? Let us know your expectations and specific needs. Reach out today, and let’s explore how we can collaborate effectively!
         </p>
       </div>

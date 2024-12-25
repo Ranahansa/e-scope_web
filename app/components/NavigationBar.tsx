@@ -121,7 +121,7 @@ export default function Navigation() {
                         <Link href="/product" className="text-white">Product</Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link href="#" className="text-white">Integrations</Link>
+                        <Link href="/technology" className="text-white">Technology</Link>
                     </NavbarItem>
                     <NavbarItem>
                         <Link href="#" className="text-white">Services</Link>
