@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import { Button } from "@nextui-org/react";
 
 const Page = () => {
     return (
@@ -73,17 +74,17 @@ const Page = () => {
                     </div>
                 </div>
             </div>
-            
+
             {/* Stats Section */}
             <div className="py-28 p-1">
                 <div className="text-center space-y-4">
                     <h2 className="text-5xl font-bold">The Faster, Affordable, Better Solution</h2>
                     <p className="text-gray-500 max-w-3xl mx-auto">
-                        Discover the advantages of choosing QuickEdit over a traditional editor. Say goodbye to 
+                        Discover the advantages of choosing QuickEdit over a traditional editor. Say goodbye to
                         delays and elevate your content creation process.
                     </p>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
                     {/* 98% Card */}
                     <div className="bg-white rounded-lg p-8 shadow-lg text-center">
@@ -93,7 +94,7 @@ const Page = () => {
                             <p className="text-gray-600">faster than a traditional editor</p>
                         </div>
                     </div>
-                    
+
                     {/* 85% Card */}
                     <div className="bg-white rounded-lg p-8 shadow-lg text-center">
                         <div className="text-6xl font-bold mb-4">85%</div>
@@ -102,7 +103,7 @@ const Page = () => {
                             <p className="text-gray-600">more affordable than a traditional editor</p>
                         </div>
                     </div>
-                    
+
                     {/* 120% Card */}
                     <div className="bg-white rounded-lg p-8 shadow-lg text-center">
                         <div className="text-6xl font-bold mb-4">120%</div>
@@ -111,6 +112,20 @@ const Page = () => {
                             <p className="text-gray-600">increased efficiency and features</p>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className="grid grid-cols-5 h-[24rem] mb-9 p-2 gap-6">
+                {/* Left Side (60%) */}
+                <div className="col-span-3 bg-gradient-to-r from-[#FF3535] to-black flex items-center justify-center rounded-l-lg">
+                    <div className='flex flex-row justify-start items-start'>
+                        <Button className="text-white" color="primary" variant="ghost">
+                        Light
+                    </Button>
+                    </div>
+                </div>
+                {/* Right Side (40%) */}
+                <div className="col-span-2 bg-black flex items-center justify-center rounded-r-lg">
+                    <p className="text-white">Right Side</p>
                 </div>
             </div>
         </div>
